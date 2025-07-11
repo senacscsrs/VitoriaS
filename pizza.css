@@ -1,12 +1,38 @@
 body{
      background-color:#F0E4D3;
      font-family: Arial, sans-serif;
+     text-align: center;
 }
 .botaoinicio {
     background-color: #FF6347; /* Tomato */
-    color: white;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+.botao{
+    text-align: center;
+    background-color: #FF6347; 
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    color: green;
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+   
 }
