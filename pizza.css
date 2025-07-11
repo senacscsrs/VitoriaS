@@ -1,10 +1,12 @@
-body{
-     background-color:#F0E4D3;
-     font-family: Arial, sans-serif;
-     text-align: center;
+body {
+    background-color: #F6DFB2;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
+
 .botaoinicio {
-    background-color: #FF6347; /* Tomato */
+    background-color: #FF6347;
+    /* Tomato */
     color: black;
     padding: 10px 20px;
     text-decoration: none;
@@ -15,24 +17,64 @@ body{
     left: 20px;
 
 }
-.botao{
+
+.botao {
     text-align: center;
-    background-color: #FF6347; 
+    background-color: #FF6347;
     color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
 }
-h1{
+
+h1 {
     text-align: center;
     color: green;
     font-size: 2.5em;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 
-.logo{
-    width: 200px;
+.logo {
+    width: 400px;
     height: auto;
-   
+
+
+}
+
+.borda {
+    border: 2px solid black;
+    padding: 10px;
+    max-width: 400px;
+    margin: auto;
+
+}
+
+.pizza {
+    padding-left: 5px;
+    margin: auto;
+    height: auto;
+    width: 90px;
+    position: left right;
+    width: 100px;
+    margin: 100px;
+
+
+}
+
+.posicao_pizza {
+    width: 90px;
+    display: flex;
+
+}
+
+p {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    display: flex;
+    max-width: 800px;
+    margin: 20px;
 }

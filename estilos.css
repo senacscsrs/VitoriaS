@@ -114,7 +114,8 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     gap: 60px;
+     gap: 80px;
+     
      
 
    }
@@ -139,6 +140,7 @@
      background-color: #B33791;
      padding: 10px;
     text-align: center;
+    border-radius: 10px;
    }
 
    .img {
