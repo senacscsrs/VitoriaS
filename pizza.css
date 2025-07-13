@@ -55,7 +55,7 @@ h1 {
     margin: auto;
     height: auto;
     width: 90px;
-    position: left right;
+    position:  right;
     width: 100px;
     margin: 100px;
 
@@ -68,13 +68,24 @@ h1 {
 
 }
 
-p {
-    text-align: left;
+.sabor {
+    
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    gap: 80px;
-    display: flex;
-    max-width: 800px;
-    margin: 20px;
+    gap: 10px;
+}
+h2 {
+    color: green;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.rodape {
+    background-color: #FF6347;
+    color: black;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 400px;
+    text-align: center;
 }
