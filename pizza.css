@@ -6,7 +6,6 @@ body {
 
 .botaoinicio {
     background-color: #FF6347;
-    /* Tomato */
     color: black;
     padding: 10px 20px;
     text-decoration: none;
@@ -55,7 +54,7 @@ h1 {
     margin: auto;
     height: auto;
     width: 90px;
-    position:  right;
+    position: right;
     width: 100px;
     margin: 100px;
 
@@ -69,26 +68,29 @@ h1 {
 }
 
 .sabor {
-    
+
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 10px;
 }
+
 h2 {
     color: green;
     font-size: 1.5em;
     margin-top: 20px;
 }
+
 .borda-interna {
-    
-    background: #F6DFB27;
-     border: 2px solid black;
+
+    background: #F6DFB2;
+    border: 2px solid black;
     padding: 10px;
     max-width: 400px;
     margin: auto;
 }
-.linha{
+
+.linha {
     width: 400px;
     height: auto;
 
