@@ -55,7 +55,7 @@ h1 {
     margin: auto;
     height: auto;
     width: 90px;
-    position:  right;
+    position: right;
     width: 100px;
     margin: 100px;
 
@@ -69,27 +69,151 @@ h1 {
 }
 
 .sabor {
-    
+
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 10px;
 }
+
 h2 {
     color: green;
     font-size: 1.5em;
     margin-top: 20px;
 }
+
 .borda-interna {
-    
+
     background: #F6DFB27;
-     border: 2px solid black;
+    border: 2px solid black;
     padding: 10px;
     max-width: 400px;
     margin: auto;
 }
-.linha{
+
+.linha {
     width: 400px;
     height: auto;
 
+}
+.estrelas {
+      direction: rtl; /* Reverte a ordem para facilitar o hover */
+      unicode-bidi: bidi-override;
+      font-size: 2rem;
+      align-items: center;
+      
+    }
+
+    .estrela {
+      cursor: pointer;
+      color: #4f4d4d;
+      transition: color 0.2s;
+       align-items: center;
+     
+    }
+
+    .estrela:hover,
+    .estrela:hover ~ .estrela {
+      color: gold;
+       align-items: center;
+    }
+
+    .selecionado,
+    .selecionado ~ .estrela {
+      color: gold;
+       align-items: center;
+    }
+    .centro{
+    margin: 0;
+      height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+      }
+       .imagem-redonda {
+      width: 200px;
+      height: 200px;
+      border-radius: 500%;
+      object-fit: cover;
+      border: 4px solid #4CAF50;
+    }
+    .infos{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 160px; 
+    height: 150px;
+}
+
+body {
+    background-color: #F6DFB2; /* Bege pizza */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 320px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border: 3px solid #FF6347; /* Vermelho tomate */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil, .data-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #0b6b41; /* Verde musgo */
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.perfil:focus, .data-input:focus {
+    border-color: #FF6347; /* Vermelho tomate ao focar */
+    box-shadow: 0px 0px 8px rgba(255, 99, 71, 0.6);
+}
+
+.data-input {
+    background-color: #fff8f0;
+}
+
+.form-footer {
+    margin-top: 15px;
+}
+
+button {
+    background-color: #0b6b41; /* Verde musgo */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF6347; /* Vermelho tomate */
+    transform: scale(1.05);
 }

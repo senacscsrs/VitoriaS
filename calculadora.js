@@ -1,0 +1,25 @@
+let nota1 = parseInt(prompt("Primeira nota: "));
+let nota2 = parseInt(prompt("Segunda nota: "));
+let media = (nota1 + nota2) / 2;
+let nota;
+media = Math.floor(media);
+switch (media) {
+    case 9 && 10:
+        nota = "A";
+        break;
+    case 7 || 8:
+        nota = "B";
+        break;
+    case 5 || 6:
+        nota = "C";
+        break;
+    case 3 || 4:
+        nota = "D";
+        break;
+    case 0 || 1 || 2:
+        nota = "E";
+        break;
+    default:
+        nota = "Nota invalida";
+}
+alert(nota);

@@ -115,8 +115,25 @@
      justify-content: center;
      align-items: center;
      gap: 80px;
-     
-     
+     padding: 12px 24px;
+   }
+
+   .botoes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .botaoproj {
+     background-color: #B33791;
+     padding: 10px;
+     width: 100px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     color: #ffffff;
+     text-align: center;
+
+
 
    }
 
@@ -139,8 +156,8 @@
    .rodape {
      background-color: #B33791;
      padding: 10px;
-    text-align: center;
-    border-radius: 10px;
+     text-align: center;
+     border-radius: 10px;
    }
 
    .img {
@@ -161,13 +178,14 @@
      border-radius: 10px;
      margin: auto;
      font-size: 40px;
-    color: #DB8DD0;
+     color: #DB8DD0;
 
    }
-.logo-size{
-  width: 15px;
-  height: 15px;
-  position: relative;
-  top: 2px;
-  margin-right: 5px;
-  }
+
+   .logo-size {
+     width: 15px;
+     height: 15px;
+     position: relative;
+     top: 2px;
+     margin-right: 5px;
+   }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizza.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <a class="botaoinicio" href="carrinho.html">voltar</a>
+    <div class="borda">
+        <h1>Pedido</h1>
+        <a class="botaoinicio" href="cardapio.html">voltar</a>
+        <br>
+        <div class="borda-interna">
+            <div class="sabor">
+                <img class="posicao_pizza" src="pizzaimg.png" alt="pizza" class="pizza">
+                <p>calabresa</p>
+            </div>
+            <div class="sabor">
+                <img class="posicao_pizza" src="pizzaimg.png" alt="pizza" class="pizza">
+                <p>portuguesa</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="borda-interna">
+            <div class="sabor">
+                <img class="posicao_pizza" src="pizzaimg.png" alt="pizza" class="pizza">
+                <p>frango com catupiry</p>
+            </div>
+
+
+            <div class="sabor">
+                <img class="posicao_pizza" src="pizzaimg.png" alt="pizza" class="pizza">
+                <p>vegetariana</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="linha">
+            <img class="linha" src="linha.jpg.png" alt="pizza" class="pizza">
+        </div>
+        <div >
+            <h1>Avaliar</h1>
+            <div class="estrelas" id="avaliacao">
+                <span class="estrela" data-valor="5">&#9733;</span>
+                <span class="estrela" data-valor="4">&#9733;</span>
+                <span class="estrela" data-valor="3">&#9733;</span>
+                <span class="estrela" data-valor="2">&#9733;</span>
+                <span class="estrela" data-valor="1">&#9733;</span>
+            </div>
+            <div>
+                <script>
+                    const estrelas = document.querySelectorAll('.estrela');
+
+                    estrelas.forEach((estrela) => {
+                        estrela.addEventListener('click', () => {
+                            const valor = estrela.getAttribute('data-valor');
+                            estrelas.forEach(e => e.classList.remove('selecionado'));
+                            estrela.classList.add('selecionado');
+                            let anterior = estrela.previousElementSibling;
+                            while (anterior) {
+                                anterior.classList.add('selecionado');
+                                anterior = anterior.previousElementSibling;
+                            }
+                            console.log(`Nota selecionada: ${valor}`);
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+          <a class="botao" href="perfil.html">próximo</a>
+    </div>
+    
+ 
+</body>
+
+</html>
