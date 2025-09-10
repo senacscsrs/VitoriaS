@@ -1,0 +1,34 @@
+
+
+let nome = prompt("Digite seu nome:");
+let distancia = parseFloat(prompt("Digite a distância da viagem (em km):"));
+let velocidade = parseFloat(prompt("Digite a velocidade média (em km/h):"));
+let consumo = parseFloat(prompt("Digite o consumo do carro (km por litro):"));
+let precoGasolina = parseFloat(prompt("Digite o preço da gasolina (por litro):"));
+
+// 2. Calcular
+let tempoViagem = distancia / velocidade;
+let litrosNecessarios = distancia / consumo;
+let gastoTotal = litrosNecessarios * precoGasolina;
+
+// 3. Exibir resultados
+// Concatenação simples
+alert("Olá " + nome + "!\n" +
+      "Tempo estimado de viagem: " + tempoViagem.toFixed(2) + " horas\n" +
+      "Litros de gasolina necessários: " + litrosNecessarios.toFixed(2) + " L\n" +
+      "Gasto total com gasolina: R$ " + gastoTotal.toFixed(2));
+
+console.log("Olá " + nome + "!");
+console.log("Tempo estimado de viagem: " + tempoViagem.toFixed(2) + " horas");
+console.log("Litros de gasolina necessários: " + litrosNecessarios.toFixed(2) + " L");
+console.log("Gasto total com gasolina: R$ " + gastoTotal.toFixed(2));
+
+// Usando template strings modernas
+console.log(`
+Resumo da Viagem:
+Nome: ${nome}
+Tempo estimado de viagem: ${tempoViagem.toFixed(2)} horas
+Litros necessários: ${litrosNecessarios.toFixed(2)} L
+Gasto total: R$ ${gastoTotal.toFixed(2)}
+`);
+
