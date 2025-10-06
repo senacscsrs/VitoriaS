@@ -1,12 +1,20 @@
-
-
-let estoque = parseInt(prompt("Digite a quantidade inicial em estoque:"));
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>controle de estoque</title>
+     <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script>
+        let estoque = parseInt(prompt("Digite a quantidade inicial em estoque:"));
 
 while (true) {
   alert("Estoque atual: " + estoque + " unidades");
 
   if (estoque < 5) {
-    alert("⚠️ Atenção: Estoque abaixo de 5 unidades!");
+    alert("Atenção: Estoque abaixo de 5 unidades!");
   }
 
   let opcao = prompt("Escolha uma opção:\n1 - Registrar venda\n2 - Sair");
@@ -27,3 +35,6 @@ while (true) {
     alert("Opção inválida. Tente novamente.");
   }
 }
+    </script>
+</body>
+</html>
