@@ -173,11 +173,11 @@ for (a = 1; a <= 10; a++) {
 }
 
 // 21. Use um for para imprimir apenas os números pares de 0 até 20.
-let s= 1;
-for(s=1; s<=20;s++){
-if (s % 2 === 0){
-    console.log(s);
-}
+let s = 1;
+for (s = 1; s <= 20; s++) {
+    if (s % 2 === 0) {
+        console.log(s);
+    }
 }
 
 // 22. Use um for para somar todos os números de 1 a 100 e mostre o resultado no console.
@@ -185,7 +185,7 @@ if (s % 2 === 0){
 let soma = 0;
 
 for (let i = 1; i <= 100; i++) {
-  soma += i; // soma = soma + i
+    soma += i; // soma = soma + i
 }
 
 console.log("A soma de 1 a 100 é:", soma);
@@ -193,15 +193,15 @@ console.log("A soma de 1 a 100 é:", soma);
 // Exercícios sobre While
 
 // 23. Crie uma variável contador iniciando em 0 e use while para imprimir os números até 5.
-let contador=0;
-while(contador<=5){
+let contador = 0;
+while (contador <= 5) {
     console.log(contador);
     contador++;
 }
 // 24. Simule um caixa eletrônico: comece com saldo = 100 e enquanto o saldo for maior que 0, retire 10 e mostre no console.
-let caixa= 100;
-while(caixa>0){
-    caixa=caixa-10;
+let caixa = 100;
+while (caixa > 0) {
+    caixa = caixa - 10;
     console.log(caixa);
 }
 // 25. Use while para mostrar todos os números ímpares entre 1 e 20.
@@ -210,31 +210,31 @@ while (impar < 20) {
     console.log(impar);
     impar += 2;
 }
- 
+
 // 26. Crie uma variável senha e simule uma tentativa de senha com while, até que a senha correta "abcd" seja digitada.
 let tentativa = "";
 while (tentativa !== "abcd") {
-    tentativa = "abcd"; 
+    tentativa = "abcd";
 }
 console.log("Senha correta!");
- 
- 
+
+
 // Exercícios sobre Do/While
- 
+
 // 27. Peça uma senha (simulada com uma variável) e use do/while para repetir até que ela seja "1234".
 let senha1 = "";
 do {
-    senha1 = "1234"; 
+    senha1 = "1234";
 } while (senha1 !== "1234");
 console.log("Senha correta!");
- 
+
 // 28. Use do/while para imprimir números de 0 a 3.
 let i = 0;
 do {
     console.log(i);
     i++;
 } while (i <= 3);
- 
+
 // 29. Crie um do/while que mostre um menu com três opções (simulado com uma variável) e só saia quando a opção for "sair".
 let opcao = "";
 do {
@@ -242,7 +242,7 @@ do {
     opcao = "sair";
 } while (opcao !== "sair");
 console.log("Saindo do menu...");
- 
+
 // 30. Use do/while para gerar números de 1 até 5 e mostrá-los no console.
 let j = 1;
 do {
@@ -250,7 +250,7 @@ do {
     j++;
     console.log(j);
 } while (j <= 5);
- 
+
 
 
 
@@ -274,26 +274,26 @@ console.log(novoAnimal);
 // Escreva um código que verifique se a palavra "JavaScript" está contida na frase "Estou aprendendo JavaScript" e, caso esteja, mostre no console "Achei a palavra!", caso contrário mostre "Não achei".
 let frase2 = "Estou aprendendo JavaScript";
 if (frase2.includes("JavaScript")) {
-  console.log("Achei a palavra!");
+    console.log("Achei a palavra!");
 } else {
-  console.log("Não achei");
+    console.log("Não achei");
 }
 
 
 // Crie um programa que peça o nome de uma fruta armazenado em uma variável e utilize a estrutura switch para exibir mensagens diferentes para "maçã", "banana" e "uva", e para qualquer outra fruta mostre a mensagem "Fruta não cadastrada".
 let fruta3 = "banana";
 switch (fruta3) {
-  case "maçã1":
-    console.log("Você escolheu maçã!");
-    break;
-  case "banana1":
-    console.log("Você escolheu banana!");
-    break;
-  case "uva1":
-    console.log("Você escolheu uva!");
-    break;
-  default:
-    console.log("Fruta não cadastrada");
+    case "maçã1":
+        console.log("Você escolheu maçã!");
+        break;
+    case "banana1":
+        console.log("Você escolheu banana!");
+        break;
+    case "uva1":
+        console.log("Você escolheu uva!");
+        break;
+    default:
+        console.log("Fruta não cadastrada");
 }
 
 
@@ -301,7 +301,7 @@ switch (fruta3) {
 // Utilize um laço for para percorrer a string "Aprender" e exibir cada letra separadamente no console.
 let palavra = "Aprender";
 for (let i = 0; i < palavra.length; i++) {
-  console.log(palavra[i]);
+    console.log(palavra[i]);
 }
 
 
@@ -309,7 +309,7 @@ for (let i = 0; i < palavra.length; i++) {
 let senhaCorreta = "1234";
 let senhaDigitada;
 do {
-  senhaDigitada = "1234"; 
+    senhaDigitada = "1234";
 } while (senhaDigitada !== senhaCorreta);
 console.log("Senha correta!");
 
@@ -317,8 +317,8 @@ console.log("Senha correta!");
 // Crie uma variável saldo com o valor 5 representando passagens de transporte e, enquanto o saldo for maior que zero, exiba no console "Usei 1 passagem. Restam X passagens", mostrando ao final "Saldo esgotado!".
 let saldo = 5;
 while (saldo > 0) {
-  console.log(`Usei 1 passagem. Restam ${saldo - 1} passagens`);
-  saldo--;
+    console.log(`Usei 1 passagem. Restam ${saldo - 1} passagens`);
+    saldo--;
 }
 console.log("Saldo esgotado!");
 
@@ -326,9 +326,9 @@ console.log("Saldo esgotado!");
 // Escreva um programa que armazene um número em uma variável e verifique se esse número é par ou ímpar, exibindo a mensagem "Número par" ou "Número ímpar" conforme o caso.
 let numero4 = 7;
 if (numero % 2 === 0) {
-  console.log("Número par");
+    console.log("Número par");
 } else {
-  console.log("Número ímpar");
+    console.log("Número ímpar");
 }
 
 
@@ -336,26 +336,27 @@ if (numero % 2 === 0) {
 let texto = "O rato roeu a roupa do rei de Roma";
 let palavras = texto.split(" ");
 for (let i = 0; i < palavras.length; i++) {
-  console.log(palavras[i]);
+    console.log(palavras[i]);
 }
 
 
 // Crie um vetor com os nomes de cinco colegas da turma e exiba cada nome no console utilizando um laço for.
 let colegas = ["Maria", "Luiza", "Isa", "Vivi", "Davii"];
 for (let i = 0; i < colegas.length; i++) {
-  console.log(colegas[i]);
+    console.log(colegas[i]);
 }
 // Crie um vetor com cinco números inteiros e calcule a soma de todos eles, mostrando o resultado final no console.
 let numeros7 = [5, 10, 15, 20, 25];
 let soma8 = 0;
 for (let i = 0; i < numeros7.length; i++) {
-  soma8 += numeros7[i];
+    soma8 += numeros7[i];
 }
 console.log("Soma total:", soma8);
 // Crie um vetor com alguns itens de supermercado (por exemplo: "arroz", "feijão", "leite") e utilize o método push() para adicionar dois novos itens, exibindo o vetor atualizado no console.
 let mercado = ["arroz", "feijão", "leite"];
 mercado.push("açúcar", "café");
 console.log("Lista atualizada:", mercado);
+
 // Crie um vetor com os dias da semana e mostre no console apenas o dia correspondente à posição atual retornada pelo método getDay() do objeto Date.
 let dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
 let hoje = new Date().getDay();
@@ -365,32 +366,34 @@ console.log("Hoje é:", dias[hoje]);
 let notas = [8, 7, 9, 6, 10];
 let total = 0;
 for (let i = 0; i < notas.length; i++) {
-  total += notas[i];
+    total += notas[i];
 }
 let media = total / notas.length;
 console.log("Média final:", media);
 
 
+
+
 // 1. Crie um código que declare uma variável chamada nome e exiba no console a mensagem:
 // Olá, [nome]! Seja bem-vindo ao JavaScript!
-let nome4= "vitória";
-console.log("Olá,", nome4,"!Seja bem-vindo ao JavaScrpt!");
+let nome4 = "vitória";
+console.log("Olá,", nome4, "!Seja bem-vindo ao JavaScrpt!");
 // ________________________________________
 // 2. Faça um programa que receba a idade de uma pessoa e exiba se ela é maior ou menor de idade.
-let idade4=17;
-if(idade4>=18){
+let idade4 = 17;
+if (idade4 >= 18) {
     console.log("maior de idade");
-}else{
+} else {
     console.log("menor de idade");
 }
 // ________________________________________
 // 3. Crie um programa que receba duas notas de um aluno, calcule a média e exiba se ele foi Aprovado, em Recuperação ou Reprovado.
-let nota1= 8;
-let nota2= 6;
-let media1=(nota1+nota2)/2;
-if(media1>=7){
-console.log("Aprovado");
-}else if(media1>=5);{
+let nota1 = 8;
+let nota2 = 6;
+let media1 = (nota1 + nota2) / 2;
+if (media1 >= 7) {
+    console.log("Aprovado");
+} else if (media1 >= 5); {
     console.log("Recuperação");
 }
 // ________________________________________
@@ -399,22 +402,36 @@ console.log("Aprovado");
 
 // ________________________________________
 // 5. Monte um código que receba o nome de um produto e o valor de compra. Se o valor for maior que 100, aplique 10% de desconto e mostre o valor final.
-let produto1= "caderno";
-let valor= 10;
-if(valor>100){
-     console.log(preco-=preco*0.1);
-  console.log(preco=preco-(preco*0.1));
-}else{
-  console.log("Sem desconto");
+let produto1 = "caderno";
+let valor = 10;
+if (valor > 100) {
+    console.log(preco -= preco * 0.1);
+    console.log(preco = preco - (preco * 0.1));
+} else {
+    console.log("Sem desconto");
 }
 
 // ________________________________________
 // 6. Crie um código que exiba todos os números de 1 a 10 usando um laço for.
+for (i = 1; i <= 10; i++) {
+    console.log(i);
+}
 
 // ________________________________________
 // 7. Faça um programa que exiba todos os números pares de 0 a 20 usando o laço while.
+let pares = 0
+while (pares <= 20) {
+    if (pares % 2 === 0) {
+        console.log("pares " + pares);
+    }
+    pares++;
+}
+
+
 // ________________________________________
 // 8. Crie um programa que receba um número e mostre a tabuada desse número de 1 a 10.
+let numm=1;
+
 // ________________________________________
 // 9. Desenvolva um programa que peça um número e verifique se ele é par ou ímpar.
 // ________________________________________
@@ -422,7 +439,7 @@ if(valor>100){
 // ________________________________________
 // 11. Monte um programa que pergunte a distância em km e calcule o valor de uma corrida considerando:
 // •	Tarifa base = R$5,00
-// •	
+// •
 // o	R$2,50 por km rodado
 // Mostre o valor total da corrida.
 // ________________________________________
