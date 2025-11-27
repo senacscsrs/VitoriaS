@@ -468,3 +468,112 @@ let numm=1;
 // 20. Faça um programa que armazene em um vetor os preços de 4 produtos e mostre:
 // •	O valor total da compra
 // •	O preço médio dos produtos
+
+
+// Atividade – Vetores e Matrizes em JavaScript
+
+// Resolva os exercícios abaixo:
+
+// Exercício 1
+
+// Crie um vetor com 4 cores diferentes e mostre todas no console.
+let cores=["verde","amarelo","roxo","rosa"];
+for(p=0;p<cores.length;p++){
+console.log(cores[p]);
+}
+
+// Exercício 2
+
+// Crie um vetor com 6 números e mostre apenas os números pares.
+let numeross=[1,2,3,4,5,6];
+for(v=0; v<numeross.length;v++) {
+    if(numeross[v]%2===0){
+        console.log(numeross[v]);
+    }
+}
+
+// Exercício 3
+
+// Crie um vetor com 5 números e mostre a soma total dos elementos.
+
+let numeros6=[1,2,3,4,5];
+let soma0=0;
+for(k=0; k<numeros6.length;k++){
+    if(soma0+=numeros6[k]);
+}console.log(`a soma total é: ${soma0}`);
+
+// Exercício 4
+
+// Crie um vetor com 5 números e mostre qual é o maior valor armazenado.
+
+let numero9=[1,2,3,4,5];
+let maior=numero9[0];
+for(g=1; g<numero9.length;g++){
+if(numero9[g]>maior){
+    maior=numero9[g];
+}
+}
+console.log(`o maior valor é:${maior}`);
+
+// Exercício 5
+
+// Crie uma matriz 3x3 com números inteiros e mostre todos os elementos no console.
+
+let numinteiro=[[1,2,3],[4,5,6],[7,8,9]];
+for(w=0; w<numinteiro.length; w++){
+    for(q=0; f<numinteiro[w].length; q++){
+        console.log(numerosinteiro[w][q]);
+    }
+}
+
+// Exercício 6
+
+// Usando a mesma matriz anterior, mostre apenas os números da diagonal principal.
+
+// // Seu código aqui
+
+
+
+// Exercício 7
+
+// Usando a matriz 3x3, calcule e mostre a soma de todos os valores.
+
+// // Seu código aqui
+
+// Exercício 8
+
+// Mostre a soma dos elementos de cada linha da matriz separadamente.
+
+// // Seu código aqui
+
+// Exercício 9
+
+// Crie um vetor com 3 nomes de alunos e uma matriz com 3 notas para cada um. Mostre o nome e a média de cada aluno.
+
+// // Seu código aqui
+
+// Exercício 10
+
+// Crie uma matriz 3x3 com números aleatórios de 1 a 10 e mostre no console.
+
+// // Seu código aqui
+
+// Desafio Extra
+
+// Mostre todos os números maiores que 5 da matriz criada no exercício 10.
+
+// // Seu código aqui
+
+
+// Parte Prática – Exercícios
+// Todos os exercícios devem ser resolvidos com console.log.
+// 1.	Crie uma função chamada bemVindo() que exiba a mensagem: 'Bem-vindo ao mundo das funções!'
+// 2.	Crie uma função chamada quadrado(numero) que receba um número e exiba o quadrado dele.
+// 3.	Crie uma função chamada dobro(numero) que retorne o dobro de um número e exiba o resultado fora da função.
+// 4.	Crie uma função chamada media(a, b, c) que receba três números e retorne a média deles.
+// 5.	Crie uma função chamada maiorNumero(a, b) que mostre qual dos dois números é maior.
+// 6.	Crie uma função chamada parOuImpar(numero) que exiba “Par” se o número for par, e “Ímpar” caso contrário.
+// 7.	Crie uma função chamada calcularDesconto(preco, percentual) que retorne o valor final com desconto aplicado.
+// 8.	Crie uma função chamada contagemRegressiva(inicio) que exiba no console uma contagem decrescente até 0.
+// 9.	Crie uma função chamada tabuada(numero) que mostre no console a tabuada de 1 a 10 do número informado.
+// 10.	Crie uma função chamada verificaIdade(idade) que exiba “Menor de idade” ou “Maior de idade”.
